@@ -58,7 +58,7 @@ header {
     cursor: pointer;
     box-shadow: 0 303px 0 0 #0035ff inset;
     transition: box-shadow 0.2s ease-in-out;
-}
+    }
 
 .characters .li_blue:hover {
     box-shadow: 0 360px 00 #0035ff inset;
@@ -150,8 +150,9 @@ footer {
     background-color: rgba(0, 0, 0, .85);
     background-image: url(../images/itadori_LB.png);
     background-repeat: no-repeat;
-    background-size: 55vh;
-    background-position: 40px bottom;
+    background-size: 65vh;
+    background-position: 20px center;
+    backdrop-filter: blur(8px);
     display: none;
 }
 
@@ -180,7 +181,13 @@ footer {
     line-height: 28px;
 }
 
-.lb_heading {
+.lb_heading_red {
+    color: #89050a;
+    font-size: 34px;
+}
+
+.lb_heading_blue {
+    color: #0035ff;
     font-size: 34px;
 }
 
