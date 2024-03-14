@@ -1,0 +1,221 @@
+.hidden {
+    display: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: #89050a;
+    padding: 20px 0;
+}
+
+#main-logo {
+    width: 280px;
+    display: block;
+    margin: 0 auto;
+}
+
+#character_nav {
+    background-image: url(../images/bg_art.jpg);
+    background-size: cover;
+}
+
+.characters {
+    list-style: none;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.characters .li_red {
+    height: 360px;
+    background-color: black;
+    margin: 10px 2px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 303px 0 0 #89050a inset;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.characters .li_blue {
+    height: 360px;
+    background-color: black;
+    margin: 10px 2px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 303px 0 0 #0035ff inset;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.characters .li_blue:hover {
+    box-shadow: 0 360px 00 #0035ff inset;
+}
+
+.characters .li_red:hover {
+    box-shadow: 0 360px 00 #89050a inset;
+}
+
+.characters li h3 {
+    color: white;
+    padding: 8px;
+    margin: auto auto;
+    width: 90px;
+}
+
+.characters li a {
+    text-decoration: none;
+}
+
+.sprite {
+    width: 150px;
+    height: 300px;
+    background-image: url(../images/jjk_sprite.jpg);
+}
+
+#gojo {
+    background-position: -150px 0;
+
+}
+
+#megumi {
+    background-position: -300px 0;
+}
+
+#todo {
+    background-position: -450px 0;
+}
+
+#toji {
+    background-position: -600px 0;
+}
+
+#mahito {
+    background-position: -750px 0;
+}
+
+#geto {
+    background-position: -900px 0;
+}
+
+#sukuna {
+    background-position: -1050px 0;
+}
+
+#itadori:hover, #gojo:hover, #megumi:hover, #todo:hover, #toji:hover, #mahito:hover, #geto:hover, #sukuna:hover {
+    background-position-y: 300px;
+}
+
+#instructions {
+    padding: 10px;
+    text-align: center;
+}
+
+#instructions h3 {
+    color: #89050a;
+    font-size: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 4px 0;
+}
+
+.sticky-footer {
+    position: sticky;
+    top: 100%;
+    height: 7.5%;
+    background-color: #89050a;
+}
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, .85);
+    background-image: url(../images/itadori_LB.png);
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 40px bottom;
+    display: none;
+}
+
+.lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+    color: white;
+    font-size: 46px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color .3s linear;
+}
+
+.lightbox_close:hover {
+    color: #89050a;
+}
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lb_text {
+    line-height: 28px;
+}
+
+.lb_heading {
+    font-size: 34px;
+}
+
+.lightbox:target {
+    display: block;
+}
+
+#lightbox1 {
+    background-image: url(../images/itadori_LB.png);
+}
+
+#lightbox2 {
+    background-image: url(../images/gojo_LB.png);
+}
+
+#lightbox3 {
+    background-image: url(../images/megumi_LB.png);
+}
+
+#lightbox4 {
+    background-image: url(../images/todo_LB.png);
+}
+
+#lightbox5 {
+    background-image: url(../images/toji_LB.png);
+}
+
+#lightbox6 {
+    background-image: url(../images/mahito_LB.png);
+}
+
+#lightbox7 {
+    background-image: url(../images/geto_LB.png);
+}
+
+#lightbox8 {
+    background-image: url(../images/sukuna_LB.png);
+}
